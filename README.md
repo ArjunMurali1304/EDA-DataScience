@@ -7,3 +7,15 @@ Data:
 The data contains details for over 18,000 players playing in various football clubs in Europe. It contains information on age, skill rating, wages and player value, etc. The files provided are as folows: 
 fifa.csv – data file.
 fifa_ variable_information.csv - information on individual variables.
+
+Contains Data Preprocessing like,
+The following columns need to be converted for further analysis:
+'Value'	Amount with Euro symbol as prefix and suffix ‘K’ or ‘M’ indicating thousands and millions respectively.	Convert to Float after getting rid of currency symbol and suffix.
+'Wage'	 Amount with Euro symbol as prefix and suffix ‘K’ or ‘M’ indicating thousands and millions respectively.	Convert to Float after getting rid of currency symbol and suffix.
+'Joined'	Year as a string, in some cases complete date as string	Convert to int with only year
+'Contract Valid Until'	Date as a string 	Convert to datetime type
+'Height'	In inches with a quotation mark 	Convert to Float with decimal points
+'Weight'	Contains the suffix lbs 	Remove the suffix and convert to float
+'Release Clause'	Amount with Euro symbol as prefix and suffix ‘K’ or ‘M’ indicating thousands and millions respectively.	Convert to Float after getting rid of currency symbol and suffix.
+
+and EDA, and key highlights from the dataset. 
